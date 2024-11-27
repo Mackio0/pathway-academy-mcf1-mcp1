@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-footerColor dark:bg-gray-900 mt-auto">
-      <div className="py-20">
-        <ContainerComponent className="grid grid-cols-12 gap-10 relative">
-          <div className="p-32 absolute bg-slate-600 w-full top-[-300px] rounded-lg text-center">
+      <div className="py-12">
+        <ContainerComponent className="grid grid-cols-12 gap-10 ">
+          <div className=" bg-slate-600 w-full rounded-lg text-center">
             CTA Test
           </div>
           <div className="col-span-3">
