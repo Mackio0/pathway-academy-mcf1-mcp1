@@ -1,7 +1,7 @@
 
 import Logo from "../../../components/Logo.jsx";
 import ContainerComponent from "../../../components/ContainerComponent.jsx";
-import registerImg from "../../../assets/login-signup-applyForm/SignUp.svg";
+import registerImg from "../../../assets/login-signup-applyForm/signUp.svg";
 import {Link} from "react-router-dom";
 import Input from "../../../components/Input.jsx";
 import PrimaryBtn from "../../public/components/PrimaryBtn.jsx";
