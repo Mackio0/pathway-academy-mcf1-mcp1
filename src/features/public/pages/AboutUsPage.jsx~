@@ -73,8 +73,7 @@ const AboutUsPage = () => {
 
           {/* why choose us
           */}
-          <div className="container mx-auto px-4 py-12 space-y-[40px] md:space-y-[80px] lg:
-          space-y-[120px]">
+          <div className="container mx-auto px-4 py-12 space-y-[40px] md:space-y-[120px]">
               <div>
                   <h2 className="text-[31px] font-semibold text-headingPrimary text-center mb-[40px]">
                       Why Choose Us
