@@ -47,7 +47,7 @@ const SupportCard = () => {
             <div className="flex justify-center mb-4">
               {item.icon}
             </div>
-            <h2 className="text-2xl font-bold mb-3">{item.title}</h2>
+            <h2 className="text-[20px] font-semibold mb-3">{item.title}</h2>
             <p className="text-gray-600">{item.description}</p>
           </div>
         ))}
