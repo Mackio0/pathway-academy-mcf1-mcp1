@@ -50,7 +50,7 @@ const renderStars = (rating) => {
     return Array.from({ length: 5 }).map((_, index) => (
         <Star
             key={index}
-            className={`w-[16px] h-[16px] ${index < Math.floor(rating) ? "text-yellow-500 fill-current" : "text-gray-300"}`}
+            className={`w-[16px] h-[16px] ${index < Math.floor(rating) ? "text-[#F7C32E] fill-current" : "text-gray-300"}`}
         />
     ));
 };
@@ -59,7 +59,7 @@ export default function FeedBackSlide() {
     const swiperRef = useRef(null);
 
     return (
-        <div className="relative pb-16 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="relative pb-16">
             <Swiper
                 modules={[Navigation, A11y]}
                 centeredSlides={true}
@@ -72,7 +72,7 @@ export default function FeedBackSlide() {
                     640: { slidesPerView: 1.5, spaceBetween: 20 },
                     768: { slidesPerView: 2, spaceBetween: 30 },
                     1024: { slidesPerView: 3, spaceBetween: 40 },
-                    1280: { slidesPerView: 3, spaceBetween: 50 },
+                    1280: { slidesPerView: 4, spaceBetween: 50 },
                 }}
                 className="pb-12 overflow-hidden"
             >

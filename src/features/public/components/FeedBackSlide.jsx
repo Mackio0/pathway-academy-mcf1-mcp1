@@ -59,7 +59,7 @@ export default function FeedBackSlide() {
     const swiperRef = useRef(null);
 
     return (
-        <div className="relative pb-16 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
+        <div className="relative pb-16">
             <Swiper
                 modules={[Navigation, A11y]}
                 centeredSlides={true}
