@@ -10,6 +10,7 @@ import MultipleItems from "../../../components/MultipleItems.jsx";
 import LogoCarousel from "../../../components/LogoCarousel.jsx";
 import Facilities from "../../../assets/about-us/heroOther/facilities.png"
 import FeedBackSlide from "../components/FeedBackSlide.jsx";
+import {useFacilitieDataStore} from "../../../store/useFacilitieDataStore.js";
 
 const AboutUsPage = () => {
 
@@ -36,23 +37,7 @@ const AboutUsPage = () => {
         }
     ];
 
-    const FacilitiesData = [
-        {
-            id : 1,
-            title :"Interactive Learning Tools",
-            description : "Enhance your learning experience with interactive tools, including quizzes, practical exercises, and a discussion forum where you can ask questions and engage with peers."
-        },
-        {
-            id : 2,
-            title :"Live Support & Guidance",
-            description: 'Our team is available 24/7 to help with any technical issues or course questions, ensuring you have a smooth experience.'
-        },
-        {
-            id : 3,
-            title :"Mobile-Friendly Learning",
-            description: 'Take your learning on the go! Our platform is optimized for mobile, so you can access your courses wherever you are, on any device.'
-        }
-    ]
+    const {data : FacilitiesData} = useFacilitieDataStore()
 
   return (
       <section className="flex flex-col min-h-screen mt-10">
