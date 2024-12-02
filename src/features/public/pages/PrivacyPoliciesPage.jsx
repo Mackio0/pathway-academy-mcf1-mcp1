@@ -1,7 +1,6 @@
 import React from 'react'
-
+import Container from '../courseDetail/components/Container'
 import Privacy from '../courseDetail/components/Privacy'
-import ContainerComponent from '../../../components/ContainerComponent'
 
 const PrivacyPoliciesPage = () => {
   return (
@@ -10,9 +9,9 @@ const PrivacyPoliciesPage = () => {
       <h3 className='text-4xl font-bold text-center align-center items-center font-e'>Privacy & Policy</h3>
       
       </div>
-      <ContainerComponent>
+      <Container>
         <Privacy/>
-      </ContainerComponent>
+      </Container>
    </>
   )
 }

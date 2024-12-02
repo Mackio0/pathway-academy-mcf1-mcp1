@@ -11,18 +11,19 @@ import LatestBlog6 from "../../../assets/blog/latestBlog/blog-6.png";
 import ContainerComponent from "../../../components/ContainerComponent";
 import { Link } from "react-router-dom";
 import { useBlogStore } from "../../../store/useBlogStore";
-import LandingSection from "../components/LandingSection";
-import hero from "../../../assets/blog/heroSection.png";
 
 const BlogPage = () => {
   const { blogs } = useBlogStore();
   return (
-    <main className="flex flex-col gap-section-spacing mb-28">
-      <LandingSection name="Blog" imgPath={hero} />
-
+    <main className="flex flex-col gap-section-spacing mb-72">
+      <div
+        className={` h-[420px] flex  justify-center items-center border  bg-heroBlog bg-right-top`}
+      >
+        <h1 className=" text-5xl text-heroPara font-bold ">Blog</h1>
+      </div>
       <ContainerComponent className={"flex flex-col gap-section-spacing"}>
         <div className=" grid grid-cols-12  gap-x-5 gap-y-10  auto-rows-min ">
-          <h2 className=" col-span-full font-semibold text-heading text-4xl justify-self-center self-center ">
+          <h2 className=" col-span-12 font-semibold text-heading text-4xl justify-self-center self-center ">
             {" "}
             Events and announcements
           </h2>
@@ -46,7 +47,7 @@ const BlogPage = () => {
 
           <div className=" flex flex-col  col-span-6     gap-5">
             <Link
-              to={`/blog/${blogs[0].slug}`}
+              to="/blog/:blog-slug"
               className=" cursor-pointer flex gap-5 shadow rounded border border-borderBlog items-center"
             >
               <img src={event2Img} alt="eventPhoto2" />
@@ -59,7 +60,7 @@ const BlogPage = () => {
               </div>
             </Link>
             <Link
-              to={`/blog/${blogs[0].slug}`}
+              to="/blog/:blog-slug"
               className=" cursor-pointer flex gap-5 shadow rounded border border-borderBlog items-center"
             >
               <img src={event3Img} alt="eventPhoto3" />
@@ -77,23 +78,18 @@ const BlogPage = () => {
             Our Latest Blogs
           </h1>
           <div className=" grid grid-cols-12 gap-y-10 gap-x-5">
-            <Link
-              to={`/blog/${blogs[0].slug}`}
-              className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog"
-            >
+            <div className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog">
               <img className="" src={LatestBlog1} alt="eventPhoto1" />
 
               <div className=" space-y-5 px-1 ">
                 <p className=" text-[1.4rem] text-para3  mb-2 font-semibold">
                   Essential Skills to Kickstart Your Development Journey
                 </p>
-                <div className="flex-grow flex flex-col justify-end">
-                  <p className=" font-hind text-para1 line-clamp-2 ">
-                    Ready to dive into the world of development? Whether you're
-                    aiming to build websites, mobile apps, or software, this
-                    guide
-                  </p>
-                </div>
+                <p className=" font-hind text-para1 line-clamp-2 ">
+                  Ready to dive into the world of development? Whether you're
+                  aiming to build websites, mobile apps, or software, this guide
+                  .......
+                </p>
 
                 <div className="flex justify-between border-t items-center border-para2 py-2">
                   <h3 className=" text-heading font-hind font-medium text-2xl">
@@ -102,23 +98,18 @@ const BlogPage = () => {
                   <p className=" text-para1 font-hind">Nov 13 2024</p>
                 </div>
               </div>
-            </Link>
-            <Link
-              to={`/blog/${blogs[0].slug}`}
-              className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog"
-            >
+            </div>
+            <div className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog">
               <img className="" src={LatestBlog2} alt="eventPhoto1" />
 
               <div className=" space-y-5 px-1 ">
                 <p className=" text-[1.4rem] font-sans text-para3 mb-2 font-semibold">
                   Revolutionizing the Business Landscape
                 </p>
-                <div className="flex-grow flex flex-col justify-end">
-                  <p className=" font-hind text-para1 line-clamp-2 ">
-                    Discover the latest trends shaping the business world and
-                    learn how to adapt your strategy to stay ahead in 2024.
-                  </p>
-                </div>
+                <p className=" font-hind text-para1 line-clamp-2 ">
+                  Discover the latest trends shaping the business world and
+                  learn how to adapt your strategy to stay ahead in 2024.
+                </p>
 
                 <div className="flex justify-between border-t items-center border-para2 py-2">
                   <h3 className=" text-heading font-hind font-medium text-2xl">
@@ -127,23 +118,18 @@ const BlogPage = () => {
                   <p className=" text-para1 font-hind">Nov 13 2024</p>
                 </div>
               </div>
-            </Link>
-            <Link
-              to={`/blog/${blogs[0].slug}`}
-              className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog"
-            >
+            </div>
+            <div className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog">
               <img className="" src={LatestBlog3} alt="eventPhoto1" />
 
               <div className=" space-y-5 px-1 ">
                 <p className=" text-[1.4rem] text-para3 mb-2 font-semibold">
                   Finding Work-Life Balance in Online Learning
                 </p>
-                <div className="flex-grow flex flex-col justify-end">
-                  <p className=" font-hind text-para1 line-clamp-2 ">
-                    Struggling to balance work, family, and learning? Discover
-                    practical ways to stay productive and stress-free.
-                  </p>
-                </div>
+                <p className=" font-hind text-para1 line-clamp-2 ">
+                  Struggling to balance work, family, and learning? Discover
+                  practical ways to stay productive and stress-free.
+                </p>
 
                 <div className="flex justify-between border-t items-center border-para2 py-2">
                   <h3 className=" text-heading font-hind font-medium text-2xl">
@@ -152,23 +138,19 @@ const BlogPage = () => {
                   <p className=" text-para1 font-hind">Nov 13 2024</p>
                 </div>
               </div>
-            </Link>
-            <Link
-              to={`/blog/${blogs[0].slug}`}
-              className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog"
-            >
+            </div>
+            <div className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog">
               <img className="" src={LatestBlog4} alt="eventPhoto1" />
 
               <div className=" space-y-5 px-1 ">
                 <p className=" text-[1.4rem] text-para3 mb-2 font-semibold">
                   Designing Your First Portfolio Website{" "}
                 </p>
-                <div className="flex-grow flex flex-col justify-end">
-                  <p className=" font-hind text-para1 line-clamp-2 ">
-                    Learn the essential steps to design a professional portfolio
-                    that highlights your expertise and attracts opportunities.
-                  </p>
-                </div>
+                <p className=" font-hind text-para1 line-clamp-2 ">
+                  Learn the essential steps to design a professional portfolio
+                  that highlights your expertise and attracts opportunities.
+                </p>
+
                 <div className="flex justify-between border-t items-center border-para2 py-2">
                   <h3 className=" text-heading font-hind font-medium text-2xl">
                     Ms. Olivia Parker
@@ -176,23 +158,18 @@ const BlogPage = () => {
                   <p className=" text-para1 font-hind">Nov 13 2024</p>
                 </div>
               </div>
-            </Link>
-            <Link
-              to={`/blog/${blogs[0].slug}`}
-              className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog"
-            >
+            </div>
+            <div className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog">
               <img className="" src={LatestBlog5} alt="eventPhoto1" />
 
-              <div className=" flex flex-col gap-5 flex-grow   px-1 ">
+              <div className=" space-y-5  px-1 ">
                 <p className=" text-[1.4rem] font-sans text-para3 mb-2 font-semibold">
                   Web Development Trends to Watch{" "}
                 </p>
-                <div className="flex-grow flex flex-col justify-end">
-                  <p className="font-hind mt-auto text-para1 line-clamp-2 ">
-                    Stay ahead in the fast-paced tech industry with this guide
-                    to the top tools and frameworks for 2024.
-                  </p>
-                </div>
+                <p className=" font-hind text-para1 line-clamp-2 ">
+                  Stay ahead in the fast-paced tech industry with this guide to
+                  the top tools and frameworks for 2024.
+                </p>
 
                 <div className="flex justify-between  border-t border-para2 py-2">
                   <h3 className=" text-heading font-hind font-medium text-2xl">
@@ -201,24 +178,19 @@ const BlogPage = () => {
                   <p className=" text-para1 font-hind">March 10 2024</p>
                 </div>
               </div>
-            </Link>
-            <Link
-              to={`/blog/${blogs[0].slug}`}
-              className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog"
-            >
+            </div>
+            <div className=" col-span-4 flex flex-col rounded shadow gap-5 border border-borderBlog">
               <img className="" src={LatestBlog6} alt="eventPhoto1" />
 
               <div className=" space-y-5 px-1 ">
                 <p className=" text-[1.4rem] text-para3 mb-2 font-semibold">
                   Unlocking Creativity Through Photography{" "}
                 </p>
-                <div className="flex-grow flex flex-col justify-end">
-                  <p className=" font-hind text-para1 line-clamp-2 ">
-                    Master the art of photography with practical tips on
-                    composition, lighting, and storytelling for breathtaking
-                    images.
-                  </p>
-                </div>
+                <p className=" font-hind text-para1 line-clamp-2 ">
+                  Master the art of photography with practical tips on
+                  composition, lighting, and storytelling for breathtaking
+                  images.
+                </p>
 
                 <div className="flex justify-between border-t items-center border-para2 py-2">
                   <h3 className=" text-heading font-hind font-medium text-2xl">
@@ -227,7 +199,7 @@ const BlogPage = () => {
                   <p className=" text-para1 font-hind">Feb 13 2024</p>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </ContainerComponent>
