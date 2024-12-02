@@ -14,7 +14,6 @@ import LogoCarousel from "../../../components/LogoCarousel.jsx";
 import {useCourseStore} from "../../../store/useCourseStore.js";
 import CourseCard from "../components/CourseCard.jsx";
 import FAQAccordion from "../components/FAQAccordion.jsx";
-import {useFaqStore} from "../../../store/useFaqStore.js";
 
 const LandingPage = () => {
     const categoriesData = [
@@ -71,8 +70,6 @@ const LandingPage = () => {
     const {courses} = useCourseStore()
 
     const {data : FacilitiesData} = useFacilitieDataStore()
-
-    const {faqs} = useFaqStore()
 
   return <section className={''}>
       <div className="relative">
@@ -256,7 +253,7 @@ const LandingPage = () => {
                   <FeedBackSlide/>
               </div>
 
-              <FAQAccordion faqs={faqs}/>
+              <FAQAccordion/>
 
           </div>
       </ContainerComponent>

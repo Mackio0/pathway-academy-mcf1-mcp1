@@ -37,7 +37,7 @@ const AboutUsPage = () => {
         }
     ];
 
-    const {data : FacilitiesData} = useFacilitieDataStore()
+    const {data} = useFacilitieDataStore()
 
   return (
       <section className="flex flex-col min-h-screen mt-10">
