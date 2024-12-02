@@ -45,12 +45,15 @@ export default {
         bg1: "#EFFAF4", // used in the hero section of course-detail/...
         bg2: "#A4F4C5", // used in the hero section of support/privacy&policy/terms&conditions
         borderBlog: "#E5E5E5",
-        paraBlue: "#0074FF",
+        paraBlue : "#0074FF"
+
+
+
+
       },
       backgroundImage: {
-        heroBlog: "url('/src/assets/blog/heroSection.png')",
-        applyForm: "url('/src/assets/login-signup-applyForm/applyForm.png')",
-        cta: "url('/src/assets/ctaBG.png')"
+        'heroBlog': "url('/src/assets/blog/heroSection.png')",
+      
       },
       spacing: {
         "section-spacing": "120px", // use as className="mb-section-spacing" or "mt-section-spacing"
