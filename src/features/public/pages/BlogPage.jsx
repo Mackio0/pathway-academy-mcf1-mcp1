@@ -15,7 +15,7 @@ import { useBlogStore } from "../../../store/useBlogStore";
 const BlogPage = () => {
   const { blogs } = useBlogStore();
   return (
-    <main className="flex flex-col gap-section-spacing mb-72">
+    <main className="flex flex-col gap-section-spacing mb-28">
       <div
         className={` h-[420px] flex  justify-center items-center border  bg-heroBlog bg-right-top`}
       >
