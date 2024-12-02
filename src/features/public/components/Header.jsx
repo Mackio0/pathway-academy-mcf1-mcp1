@@ -12,7 +12,7 @@ const Header = () => {
     <header className="">
       <ContainerComponent className={"flex justify-between items-center py-3"}>
         <div className="">
-          <Link to="/home">
+          <Link to="/">
             <Logo className={"h-12"} />
           </Link>
         </div>
@@ -63,9 +63,9 @@ const Header = () => {
               Sign up
             </SecondaryBtn>
           </Link>
-          <Link to={"/login"}>
-            <PrimaryBtn className={"px-4 py-2"} isBlack={true}>
-              Sign in
+          <Link to={"/apply-form"}>
+            <PrimaryBtn className={"px-4 py-2"} >
+              Apply Now
             </PrimaryBtn>
           </Link>
         </div>

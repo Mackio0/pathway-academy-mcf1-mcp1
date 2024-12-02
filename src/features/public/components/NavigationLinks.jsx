@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function NavigationLinks() {
   const links = [
-    { text: "Home", path: "/home" },
+    { text: "Home", path: "/" },
     { text: "About us", path: "/about-us" },
     { text: "Courses", path: "/courses" },
     { text: "Blogs", path: "/blogs" },

@@ -1,6 +1,5 @@
 import { lazy } from "react";
 
-
 // const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 // const ContactUsPage = lazy(() =>
 //   import("../features/public/pages/ContactUsPage")
@@ -22,14 +21,13 @@ const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
   import("../features/public/pages/ContactUsPage")
 );
-const LandingPage = lazy(() =>
-  import("../features/public/pages/LandingPage")
-);
+const LandingPage = lazy(() => import("../features/public/pages/LandingPage"));
 const CourseListPage = lazy(() =>
   import("../features/public/pages/CourseListPage")
 );
-const CourseDetailPage= lazy(()=>
-  import( "../features/public/courseDetail/Pages/CourseDetailPage"));
+const CourseDetailPage = lazy(() =>
+  import("../features/public/courseDetail/Pages/CourseDetailPage")
+);
 
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
 const BlogDetailPage = lazy(() =>
@@ -41,6 +39,7 @@ const PrivacyPoliciesPage = lazy(() =>
 );
 const TosPage = lazy(() => import("../features/public/pages/TosPage"));
 const SupportPage = lazy(() => import("../features/public/pages/SupportPage"));
+import ApplyFormPage from "../features/public/pages/ApplyFormPage";
 
 // const publicRoute = [
 //   {
@@ -59,7 +58,7 @@ const SupportPage = lazy(() => import("../features/public/pages/SupportPage"));
 
 const publicRoute = [
   {
-    path: "home",
+    path: "/",
     element: <LandingPage />,
   },
   {
@@ -102,6 +101,7 @@ const publicRoute = [
     path: "support",
     element: <SupportPage />,
   },
+  
 ];
 
 export default publicRoute;
