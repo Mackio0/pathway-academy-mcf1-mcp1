@@ -8,7 +8,7 @@ const PublicLayout = () => {
   return (
     <main className=" flex flex-col min-h-screen">
 
-      <Header />
+      {/*<Header />*/}
 
       <Suspense fallback={<PageLoading />}>
         <Outlet />
