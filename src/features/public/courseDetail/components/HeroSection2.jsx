@@ -5,8 +5,9 @@ import ContainerComponent from '../../../../components/ContainerComponent';
 
 export default function HeroSection2() {
   return (
-    <ContainerComponent className="custom-class">
-    <div className="bg-primary-50 mx-auto p-6">
+ 
+    <div className="bg-primary-50 mx-auto p-6 w-full">
+         <ContainerComponent className="custom-class">
      {/* Breadcrumb */}
      <nav className="flex items-center gap-2 text-sm text-gray-600 mb-8">
        <a href="#" className="hover:text-gray-900">Course</a>
@@ -15,12 +16,12 @@ export default function HeroSection2() {
      </nav>
 
      {/* Course Title */}
-     <h1 className="text-4xl font-bold text-gray-900 mb-4">
+     <h1 className="lg:text-4xl md:text-[31px] text-[20px] font-bold text-gray-900 mb-4">
        JavaScript for Beginner
      </h1>
 
      {/* Course Description */}
-     <p className="text-gray-600 mb-8 text-lg">
+     <p className="text-gray-600 mb-8 text-lg lg:w-3/4 w-full ">
        JavaScript is the popular programming language which powers web pages and web
        applications. This course will get you started coding in JavaScript.
      </p>
@@ -47,8 +48,9 @@ export default function HeroSection2() {
          <span className="text-gray-700">English</span>
        </div>
      </div>
+     </ContainerComponent>
    </div>
-  </ContainerComponent>
+
   );
 }
 

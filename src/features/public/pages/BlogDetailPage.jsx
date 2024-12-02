@@ -1,25 +1,24 @@
 import React from "react";
-import useDateFormat from "../hooks/useDateFormat";
 import { Link, useParams } from "react-router-dom";
 import { useBlogStore } from "../../../store/useBlogStore";
 import ContainerComponent from "../../../components/ContainerComponent";
 import event1Img from "../../../assets/blog/events/event-1.png";
-import { f } from "html2pdf.js";
+
+import ShowDate from "../components/ShowDate";
 
 const BlogDetailPage = () => {
   const { blogSlug } = useParams();
   const { blogs } = useBlogStore();
   const currentElementIndex = blogs.findIndex((el) => el.slug === blogSlug);
 
-  const date = useDateFormat(blogs[currentElementIndex].date);
-  console.log(date);
 
-  // const formatDate = useDateFormat()
+
+
   return (
     <section className=" space-y-section-spacing mb-32">
-      <section className="  grid-rows-[420px] items-center col-span-12 grid grid-cols-12  gap-5 bg-bg1">
+      <section className="  grid-rows-[420px] items-center col-span-full grid grid-cols-12  gap-5 bg-bg1">
         <div className=" col-span-8 col-start-3 px-9  space-y-4 mx-auto">
-          <p className=" text-para4  ">{date}</p>
+<ShowDate date={blogs[currentElementIndex].date}/>
           <p className=" text-2xl text-para4 font-medium">
             Announcing 10 entry-level Professional Certificates from our biggest
             partners as digital transformation reshapes the labor market
