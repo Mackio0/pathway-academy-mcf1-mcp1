@@ -8,14 +8,13 @@ import ContainerComponent from '../../../../components/ContainerComponent'
 
 const CourseDetailPage = () => {
   return (
-   <>
+    <ContainerComponent>
    <HeroSection2/>
-   <ContainerComponent>
      <HeroSection/>
       <TopLIstedCourses/>
       
       </ContainerComponent>
-      </>
+    
   )
 }
 
