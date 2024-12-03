@@ -9,7 +9,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <PublicLayout />,
-    // errorElement: <NotFound />,
+    errorElement: <NotFound />,
     children: [...publicRoute],
   },
   ...authRoute,
