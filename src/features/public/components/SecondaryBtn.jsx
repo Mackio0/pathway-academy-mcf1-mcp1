@@ -5,12 +5,11 @@ const SecondaryBtn = ({
   children,
   onClick,
   isBorderGreen = false,
-  type = "button"
 }) => {
   return (
     <>
       <button
-        type={type}
+        type="button"
         onClick={onClick && onClick}
         className={
           isBorderGreen

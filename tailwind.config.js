@@ -15,8 +15,8 @@ export default {
       fontSize: {
         h1: "49px", // use as className="text-h1"/"text-para1" etc.
         h2: "39px",
-        para: "20px",
-        paraTwo: "16px",
+        para1: "20px",
+        para2: "16px",
       },
       colors: {
         primary: {
@@ -44,13 +44,6 @@ export default {
         starColor: "#F7C32E",
         bg1: "#EFFAF4", // used in the hero section of course-detail/...
         bg2: "#A4F4C5", // used in the hero section of support/privacy&policy/terms&conditions
-        borderBlog: "#E5E5E5",
-        paraBlue: "#0074FF",
-      },
-      backgroundImage: {
-        heroBlog: "url('/src/assets/blog/heroSection.png')",
-        applyForm: "url('/src/assets/login-signup-applyForm/applyForm.png')",
-        cta: "url('/src/assets/ctaBG.png')"
       },
       spacing: {
         "section-spacing": "120px", // use as className="mb-section-spacing" or "mt-section-spacing"

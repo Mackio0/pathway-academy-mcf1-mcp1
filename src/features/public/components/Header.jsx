@@ -12,7 +12,7 @@ const Header = () => {
     <header className="">
       <ContainerComponent className={"flex justify-between items-center py-3"}>
         <div className="">
-          <Link to="/">
+          <Link to="/home">
             <Logo className={"h-12"} />
           </Link>
         </div>
@@ -48,9 +48,9 @@ const Header = () => {
             >
               <path
                 stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
                 d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
               />
             </svg>
@@ -63,9 +63,9 @@ const Header = () => {
               Sign up
             </SecondaryBtn>
           </Link>
-          <Link to={"/apply-form"}>
-            <PrimaryBtn className={"px-4 py-2"} >
-              Apply Now
+          <Link to={"/login"}>
+            <PrimaryBtn className={"px-4 py-2"} isBlack={true}>
+              Sign in
             </PrimaryBtn>
           </Link>
         </div>

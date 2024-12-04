@@ -21,14 +21,15 @@ const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
   import("../features/public/pages/ContactUsPage")
 );
-const LandingPage = lazy(() => import("../features/public/pages/LandingPage"));
+const LandingPage = lazy(() =>
+  import("../features/public/pages/LandingPage")
+);
 const CourseListPage = lazy(() =>
   import("../features/public/pages/CourseListPage")
 );
 const CourseDetailPage = lazy(() =>
-  import("../features/public/courseDetail/Pages/CourseDetailPage")
+  import("../features/public/pages/CourseDetailPage")
 );
-
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
 const BlogDetailPage = lazy(() =>
   import("../features/public/pages/BlogDetailPage")
@@ -39,7 +40,6 @@ const PrivacyPoliciesPage = lazy(() =>
 );
 const TosPage = lazy(() => import("../features/public/pages/TosPage"));
 const SupportPage = lazy(() => import("../features/public/pages/SupportPage"));
-import ApplyFormPage from "../features/public/pages/ApplyFormPage";
 
 // const publicRoute = [
 //   {
@@ -58,7 +58,7 @@ import ApplyFormPage from "../features/public/pages/ApplyFormPage";
 
 const publicRoute = [
   {
-    path: "/",
+    path: "home",
     element: <LandingPage />,
   },
   {
@@ -70,7 +70,7 @@ const publicRoute = [
     element: <CourseListPage />,
   },
   {
-    path: "courses/course-detail",
+    path: "courses/:course-slug",
     element: <CourseDetailPage />,
   },
   {
@@ -82,7 +82,7 @@ const publicRoute = [
     element: <BlogPage />,
   },
   {
-    path: "blog/:blogSlug",
+    path: "blog/:blog-slug",
     element: <BlogDetailPage />,
   },
   {
@@ -101,7 +101,6 @@ const publicRoute = [
     path: "support",
     element: <SupportPage />,
   },
-  
 ];
 
 export default publicRoute;
