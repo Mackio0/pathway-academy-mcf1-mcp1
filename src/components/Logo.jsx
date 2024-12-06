@@ -1,13 +1,12 @@
-import React from 'react'
-import logo from '../assets/pathway-academy-logo.png'
+import React from "react";
+import logo from "../assets/logo.svg";
 
-
-const Logo = ({className}) => {
+const Logo = ({ className }) => {
   return (
     <>
       <img src={logo} alt="Pathway Academy Logo" className={className} />
     </>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;
